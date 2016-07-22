@@ -7,10 +7,36 @@ void wc ( FILE *infile, char *inname);
 
 int
 main (int argc, char *argv[]) {
-    
-}
+
+   
+    }
 
 void
 wc( FILE *infile, char *inname) {
+    int c;
+    int d=0;
+    while((c = fgetc(infile)) != EOF){
+       
+      d++;
+      c= fgetc(infile);
+      }
+   int e=0;
+  
+      if(isspace(c) == true){
+       e++;
+      }
     
+   int f=0;
+     while(c != "\n"){
+     
+       f++;
+      }
+     printf("The number %d",c);
 }
+
+
+    
+
+
+
+
